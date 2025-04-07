@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="RevolvingUtilizationOfUnsecuredLines <= 0.701\ngini = 0.136\nsamples = 300\nvalue = [278, 22]"] ;
+1 [label="MonthlyIncome <= 8286.0\ngini = 0.056\nsamples = 243\nvalue = [236, 7]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 32.5\ngini = 0.022\nsamples = 176\nvalue = [174, 2]"] ;
+1 -> 2 ;
+3 [label="gini = 0.117\nsamples = 16\nvalue = [15, 1]"] ;
+2 -> 3 ;
+4 [label="RevolvingUtilizationOfUnsecuredLines <= 0.001\ngini = 0.012\nsamples = 160\nvalue = [159, 1]"] ;
+2 -> 4 ;
+5 [label="gini = 0.124\nsamples = 15\nvalue = [14, 1]"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 145\nvalue = [145, 0]"] ;
+4 -> 6 ;
+7 [label="MonthlyIncome <= 8791.5\ngini = 0.138\nsamples = 67\nvalue = [62, 5]"] ;
+1 -> 7 ;
+8 [label="gini = 0.305\nsamples = 16\nvalue = [13, 3]"] ;
+7 -> 8 ;
+9 [label="RevolvingUtilizationOfUnsecuredLines <= 0.134\ngini = 0.075\nsamples = 51\nvalue = [49, 2]"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 30\nvalue = [30, 0]"] ;
+9 -> 10 ;
+11 [label="gini = 0.172\nsamples = 21\nvalue = [19, 2]"] ;
+9 -> 11 ;
+12 [label="RevolvingUtilizationOfUnsecuredLines <= 0.989\ngini = 0.388\nsamples = 57\nvalue = [42, 15]"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label="gini = 0.285\nsamples = 29\nvalue = [24, 5]"] ;
+12 -> 13 ;
+14 [label="gini = 0.459\nsamples = 28\nvalue = [18, 10]"] ;
+12 -> 14 ;
+}
